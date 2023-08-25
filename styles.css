@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: #f6f1f1;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(
+    to right,
+    #148cc3 20%,
+    #a2299e 30%,
+    #19a7ce 70%,
+    #7953cd 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  white-space: nowrap;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.home-container {
+  background-color: #0e2954;
+  display: flex;
+  height: 100vh;
+  padding: 0% 5%;
+  align-items: center;
+}
+
+.title-image-home {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  filter: saturate(500%) contrast(800%) brightness(500%) invert(80%) sepia(50%)
+    hue-rotate(120deg);
+}
+
+.container-summary {
+  background-color: #1f6e8c;
+  height: 100vh;
+  padding: 0% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile-pic {
+  height: 250px;
+  border-radius: 50%;
+  margin: 10% 0%;
+}
+
+.description {
+  width: 40%;
+  margin: auto;
+}
+
+.projects {
+  background-color: #2e8a99;
+}
+
+.projects-title > h2 {
+  padding: 50px 0px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  gap: 2rem;
+}
+
+.item-img > img {
+  width: 300px;
+  border: 3px solid #f6f1f1;
+  border-radius: 10px;
+}
+
+.item-desc > p {
+  margin: 5px 0px;
+}
+
+button {
+  border-radius: 4px;
+  font-size: 14px;
+  height: 35px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  border-radius: 4px;
+  font-size: 14px;
+  height: 35px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #f6f1f1;
+}
+
+button:hover {
+  background-color: #f6f1f1;
+  transition: 0.5s;
+  border: none;
+  color: #0e2954;
+}
+
+.contact-me {
+  font-family: "Poppins", sans-serif;
+  background-color: #84a7a1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contact-me-btn {
+  width: 190px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .description {
+    width: 60%;
+    margin: auto;
+  }
+  .project-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  button {
+    border-radius: 4px;
+    font-size: 14px;
+    height: 35px;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .last {
+    border-radius: 4px;
+    font-size: 14px;
+    height: 35px;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .description {
+    width: 80%;
+    margin: auto;
+  }
+  .profile-pic {
+    height: 200px;
+    border-radius: 50%;
+    margin: 10% 0%;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .profile-pic {
+    height: 100px;
+    border-radius: 50%;
+    margin: 10% 0%;
+  }
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .item-img > img {
+    width: 200px;
+    border: 3px solid #f6f1f1;
+    border-radius: 10px;
+  }
+
+  .item-desc > p {
+    display: none;
+  }
+}
